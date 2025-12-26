@@ -5,21 +5,21 @@
 class Keyway < Formula
   desc "GitHub-native secrets management CLI"
   homepage "https://keyway.sh"
-  version "0.3.9"
+  version "0.3.10"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/keywaysh/cli-go/releases/download/v0.3.9/keyway_0.3.9_darwin_amd64.tar.gz"
-      sha256 "8c95799aa66344e118edc6f299bce5bb6120561c32ccf41d0960e63b46d870a0"
+      url "https://github.com/keywaysh/cli/releases/download/v0.3.10/keyway_0.3.10_darwin_amd64.tar.gz"
+      sha256 "08787a59af430ceb4e7d58352d4ead345c490e25e0d80cc77674acf9edd3d811"
 
       def install
         bin.install "keyway"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/keywaysh/cli-go/releases/download/v0.3.9/keyway_0.3.9_darwin_arm64.tar.gz"
-      sha256 "c7a154439c0968240ba5adcfd703a60ee437b8121ffbecdccec85e8a42a216b7"
+      url "https://github.com/keywaysh/cli/releases/download/v0.3.10/keyway_0.3.10_darwin_arm64.tar.gz"
+      sha256 "e5c394a179c248f27fb2c530716363f1b93cec41b7e8b1bd867d1d07b679fa8f"
 
       def install
         bin.install "keyway"
@@ -29,15 +29,15 @@ class Keyway < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/keywaysh/cli-go/releases/download/v0.3.9/keyway_0.3.9_linux_amd64.tar.gz"
-      sha256 "a4d14ed3548fca2a8ed872649c1ff4fced975158ca38d918cf754983f54c61a1"
+      url "https://github.com/keywaysh/cli/releases/download/v0.3.10/keyway_0.3.10_linux_amd64.tar.gz"
+      sha256 "61f3cf1ee1cd54988c3c1759541d0043ff1095b3f51539bfebaac7adc7ee42bc"
       def install
         bin.install "keyway"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/keywaysh/cli-go/releases/download/v0.3.9/keyway_0.3.9_linux_arm64.tar.gz"
-      sha256 "d9747826948dc2b5407104669df803f82dbc1735b2dd37ce4bf2565915ba989e"
+      url "https://github.com/keywaysh/cli/releases/download/v0.3.10/keyway_0.3.10_linux_arm64.tar.gz"
+      sha256 "be989eb96abda6b0f7b62bd81c27e7c43dda2c1d2b6a98ebb4a8e3b3836e63ad"
       def install
         bin.install "keyway"
       end
