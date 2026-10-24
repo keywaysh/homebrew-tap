@@ -5,21 +5,21 @@
 class Keyway < Formula
   desc "GitHub-native secrets management CLI"
   homepage "https://keyway.sh"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/keywaysh/keyway/releases/download/cli%2Fv0.6.0/keyway_0.6.0_darwin_amd64.tar.gz"
-      sha256 "ff7d51f25930346a35ede7421842d0bdb335e4d397f5471ac486e2b1008c8055"
+      url "https://github.com/keywaysh/keyway/releases/download/cli%2Fv0.6.1/keyway_0.6.1_darwin_amd64.tar.gz"
+      sha256 "f4e38f6acf5b3f5845c38b60e29d0956cd5677f415ef42b1e18034030dc91902"
 
       define_method(:install) do
         bin.install "keyway"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/keywaysh/keyway/releases/download/cli%2Fv0.6.0/keyway_0.6.0_darwin_arm64.tar.gz"
-      sha256 "f8001303f1048482e8deba93654cd24d4b85334202119a80ea21beaacf08fc2d"
+      url "https://github.com/keywaysh/keyway/releases/download/cli%2Fv0.6.1/keyway_0.6.1_darwin_arm64.tar.gz"
+      sha256 "88952ff8c0d765bae76c9b0db88202349f5e06232badc3fd522ece3e2a2d0c0a"
 
       define_method(:install) do
         bin.install "keyway"
@@ -29,15 +29,15 @@ class Keyway < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/keywaysh/keyway/releases/download/cli%2Fv0.6.0/keyway_0.6.0_linux_amd64.tar.gz"
-      sha256 "f98159b83b87ccb9414fae1928fd3fd773291192410c79cf6ee200ed56dd6548"
+      url "https://github.com/keywaysh/keyway/releases/download/cli%2Fv0.6.1/keyway_0.6.1_linux_amd64.tar.gz"
+      sha256 "23e62a1b9818323077428839220ce96d16c8eeb7cb23edc95f2cd05632804e4d"
       define_method(:install) do
         bin.install "keyway"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/keywaysh/keyway/releases/download/cli%2Fv0.6.0/keyway_0.6.0_linux_arm64.tar.gz"
-      sha256 "3c5de0b4d7053618ff4a50b0f6c0348b9fbc34fb09a0ce12ca9006ae9bf2680b"
+      url "https://github.com/keywaysh/keyway/releases/download/cli%2Fv0.6.1/keyway_0.6.1_linux_arm64.tar.gz"
+      sha256 "d217962649eb5c08e74550897ae8fe70c2c95efa0b5bfdeb02658ac2f39f2693"
       define_method(:install) do
         bin.install "keyway"
       end
